@@ -3,23 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria Pizze il Napolitano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"   rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"  rel="stylesheet"/>
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -56,21 +51,27 @@
                 <time>23/05/22</time>
               </figcaption>
             </figure>
+            <button class="button" value="1">
+              Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+            </button>
           </div>
-        </li> 
-        
+        </li>
+
         <li>
-        <div class="box">
-          <figure>
-            <img src="img/pizza-4-quesos.jpg" alt="Cuatro Quesos" />
-            <figcaption>
-              <h3>Pizza Cuatro Quesos</h3>
-              <p>$1900</p>
-              <time>23/05/22</time>
-            </figcaption>
-          </figure>
-        </div>
-      </li>
+          <div class="box">
+            <figure>
+              <img src="img/pizza-4-quesos.jpg" alt="Cuatro Quesos" />
+              <figcaption>
+                <h3>Pizza Cuatro Quesos</h3>
+                <p>$1900</p>
+                <time>23/05/22</time>
+              </figcaption>
+            </figure>
+            <button class="button" value="2">
+              Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+            </button>
+          </div>
+        </li>
 
         <li>
           <div class="box">
@@ -82,6 +83,9 @@
                 <time>23/05/22</time>
               </figcaption>
             </figure>
+            <button class="button" value="3">
+              Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+            </button>
           </div>
         </li>
 
@@ -95,6 +99,9 @@
                 <time>23/05/22</time>
               </figcaption>
             </figure>
+            <button class="button" value="4">
+              Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+            </button>
           </div>
         </li>
 
@@ -103,35 +110,52 @@
             <figure>
               <img src="img/pizza-napolitana.jpg" alt="Napolitana" />
               <figcaption>
-                <h3>Pizza Napolitana </h3>
+                <h3>Pizza Napolitana</h3>
                 <p>$1900</p>
                 <time>23/05/22</time>
               </figcaption>
             </figure>
+            <button class="button" value="5">
+              Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+            </button>
           </div>
         </li>
 
         <li>
           <div class="box">
             <figure>
-              <img src="img/pizza-rucula-y-jamon-crudo.jpg" alt="Pizza De Rucula y Jamon Crudo" />
+              <img
+                src="img/pizza-rucula-y-jamon-crudo.jpg"
+                alt="Pizza De Rucula y Jamon Crudo"
+              />
               <figcaption>
                 <h3>Pizza De Rúcula y Jamón Crudo</h3>
                 <p>$2500</p>
                 <time>23/05/22</time>
               </figcaption>
             </figure>
+            <button class="button" value="6">
+              Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+            </button>
           </div>
         </li>
 
       </ul>
     </div>
     <footer>
-<p>
-  
-  &copy;2022
-
-</p>
+      <p> &copy; 2022</p>
     </footer>
+    <script>
+      const count_buttons = document.querySelectorAll("button").length;
+      for(var i=0; i<count_buttons; i++)
+      {
+          document.querySelectorAll("button")[i].addEventListener("click",showValue);
+      }
+      function showValue()
+      {
+        alert (this.value);
+        console.log (this.value);
+      }
+    </script>
   </body>
 </html>
