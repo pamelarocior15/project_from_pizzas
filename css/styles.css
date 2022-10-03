@@ -141,6 +141,48 @@ footer {
   font-weight: bold;
 }
 
+footer link {
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  font-family: "Lato", sans-serif;
+  background: rgb(64,2,91);
+  background: linear-gradient(90deg, rgba(64,2,91,1) 0%, rgba(228,135,255,1) 50%, rgba(243,207,247,1) 100%);
+}
+
+.form-signin {
+  max-width: 380px;
+  background-color: #fff;
+  border: none;
+  padding: 15px 35px 45px 35px;
+}
+
+.form-signin-heading {
+  margin-bottom: 30px;
+}
+
+input [type= "text"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input [type= "password"] {
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: #7207ff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 960px) {
   #header-container{
     flex-direction: column;
@@ -156,3 +198,4 @@ footer {
     justify-content: center;
   }
 }
+
